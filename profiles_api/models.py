@@ -12,8 +12,8 @@ class UserProfileManager(BaseUserManager):
         if not email:
             raise valueError('User must have an email address')
 
-        email = self.normalize(email)
-        user = self.modle(email=email, name=name)
+        email = self.normalize_email(email)
+        user = self.model(email=email, name=name)
 
         user.set_password(password)
         user.save(using=self._db)
