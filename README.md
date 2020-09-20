@@ -1,3 +1,3 @@
-# Profiles RESR API
+# Profiles REST API using DJANGO
 
 Profiles REST API 
